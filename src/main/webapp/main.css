@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+
+.display_all{
+	padding: 30px 100px;
+	min-width:80%;
+}
+
+.headers{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom : 10px;
+	padding : 0px 40px;
+}
+
+
+.todo_register{
+	position: fixed;
+	top:70px;
+	right:40px;
+	background-color: black;
+	width: 130px;
+	height: 40px;
+	color: white;
+	font-weight: 700px;
+}
+
+
+.todo_list{
+	}
+
+.section_list{
+	width: auto;
+	height: 500px;
+}
+
+
+ul{
+	list-style: none;	
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.TODO,
+.DONE,
+.DOING{
+	width: 300px;
+	height: 50px;
+	background-color: black;
+	font-size: 23px;
+	text-align: center;
+	color:white;
+	font-weight: 700;
+	padding-top : 13px;
+	border-radius: 10%;
+}
+
+
+
+.list{
+	background-color: #c0c0c0;
+	padding-left: 15px;
+	border-radius: 20%;
+	
+	
+}
+
+.list_title{
+	font-size: 20px;
+	font-weight: 700;
+	padding-top: 15px;
+}
+
+.list_info{
+	position: relative;
+	bottom: 15px;
+	font-size:12px;
+	font-weight:700;
+	color:#464646;
+}
+
+.next{
+	color:white;
+	background-color: #555555;
+	border-radius: 30%;
+	}
