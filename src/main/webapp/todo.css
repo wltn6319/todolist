@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.todo_display{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+
+#todo_register>input{
+	margin-bottom: 25px;
+
+}
+
+.todo_input{
+	width: 400px;
+	height: 30px;
+}
+.back_page{
+	background-color: white;
+	width: 90px;
+	height: 40px;
+	margin-right: 110px;
+}
+.back_page>a{
+	color:black;
+	font-size: 16px;
+}
+
+.todo_submit{
+	width: 90px;
+	height: 40px;
+	background-color: black;
+	color:white;
+	margin-left:10px;
+}
+
+.todo_submit>a{
+	text-decoration: none;
+	color:white;
+	
+}
