@@ -32,7 +32,13 @@ public class TodoTypeServlet extends HttpServlet {
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-	
+		request.setCharacterEncoding("UTF-8");
+
+		int id = Integer.parseInt(request.getParameter("id"));
+		String type= request.getParameter("type");
+		
+		TodoDao dao = new TodoDao();
+		dao.updateTodo(id, type);
 	}
 
 }

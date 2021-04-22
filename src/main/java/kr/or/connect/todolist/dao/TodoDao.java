@@ -80,7 +80,39 @@ public class TodoDao {
 		return insertCount;
 	}
 
+	public int updateTodo(int id , String type) {
+		int updateCount = 0;
 
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+		}catch (ClassNotFoundException e) {
+
+			e.printStackTrace();
+		}
+		String sql = "UPDATE todo SET type = ? WHERE id = ? ";
+		
+		try(Connection conn = DriverManager.getConnection(dburl, dbUser, dbpasswd);
+				PreparedStatement ps = conn.prepareStatement(sql)) {
+			String updateType ="";
+			if("TODO".equals(type)) {
+				updateType = "DOING";
+			}
+			else if("DOING".equals(type)) {
+				updateType = "DONE";
+			}
+			
+			ps.setString(1, updateType);
+			ps.setInt(2, id);
+			
+			updateCount = ps.executeUpdate();
+		}catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		return updateCount;
+		
+	}
+	
+	
 }
 
 
